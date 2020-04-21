@@ -13,5 +13,12 @@ layout: default
 </article>
 
 <div class="page-navigation code">
-	<a class="home" href="{{ "/blog" | prepend: site.baseurl | prepend: site.url }}" title="Back to Index">&larr; Index</a>
+	{% if page.lang == 'en' %}
+      		<a class="home" href="{{ "/blog" | prepend: site.baseurl | prepend: site.url }}" title="Go to Index">&larr; Index</a>
+    	{% else %}
+      		<a class="home" href="{{ "/blog-pt" | prepend: site.baseurl | prepend: site.url }}" title="Ir para Índice">&larr; Índice</a>
+    	{% endif %}
+	
+	
+	
 </div>
