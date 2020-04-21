@@ -9,12 +9,12 @@
 			{% assign prompt = 'Ir para Índice' %}
 		{% endif %}
 	{% else %}
-		{% if page.url == '/blog/' %}
-			{% assign link = '/' %}
-			{% assign prompt = 'About the Author' %}
-		{% else %}
+		{% if page.url == '/blog-pt' %}
 			{% assign link = '/indice.html' %}
 			{% assign prompt = 'Sobre o Autor' %}
+		{% else %}
+			{% assign link = '/' %}
+			{% assign prompt = 'About the Author' %}
 		{% endif %}
 	{% endif %}
 
