@@ -4,8 +4,18 @@
 		{% assign link = '/blog' %}
 		{% assign prompt = 'Back to Index' %}
 	{% else %}
-		{% assign link = '/' %}
-		{% assign prompt = 'About the Author' %}
+		{% if page.url == '/indice.html' %}
+			{% assign link = '/blog-pt' %}
+			{% assign prompt = 'Ir para Índice' %}
+		{% endif %}
+	{% else %}
+		{% if page.url == '/blog' %}
+			{% assign link = '/' %}
+			{% assign prompt = 'About the Author' %}
+		{% else %}
+			{% assign link = '/indice.html' %}
+			{% assign prompt = 'Sobre o Autor' %}
+		{% endif %}
 	{% endif %}
 
 	<a href="{{ link | prepend: site.baseurl | prepend: site.url }}">
