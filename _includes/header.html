@@ -8,12 +8,12 @@
 			{% assign link = '/blog-pt' %}
 			{% assign prompt = 'Ir para Índice' %}
 		{% else %}
-			{% if page.lang == 'pt-br' %}
-				{% assign link = '/indice.html' %}
-				{% assign prompt = 'Sobre o Autor' %}
-			{% else %}
+			{% if page.lang == 'en' %}
 				{% assign link = '/' %}
 				{% assign prompt = 'About the Author' %}
+			{% else %}
+				{% assign link = '/indice.html' %}
+				{% assign prompt = 'Sobre o Autor' %}
 			{% endif %}
 		{% endif %}
 	{% endif %}
