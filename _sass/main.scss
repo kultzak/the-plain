@@ -68,6 +68,9 @@ a {
     margin: 30px 0;
   }
 }
+a.en:lang(en), a.pt-br:lang(pt-br) {
+  font-weight: bold;
+}
 mark {
   background: #fffc76;
   padding: 0 5px;
